@@ -3,103 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domestic Worker Services</title>
+    <title>Domestic Workers Connect</title>
+    <link rel="stylesheet" href="styles_hp.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #b2ebf2; /* Pale beige background */
+            font-family: Arial, sans-serif;
         }
 
-        /* Heading Styles */
-        h1 {
-            text-align: center;
-            margin-top: 100px; /* Increased space at the top */
-            color: #333;
-        }
-
-        /* Card Container Styles */
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1200px;
-            gap: 20px;
+        header {
+            background-color: #f8f8f8; /* Optional: add a background color */
             padding: 20px;
-            margin: 40px auto; /* Added margin to lower elements */
         }
 
-        .card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            width: 280px; /* Card width */
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s;
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Stack logo and nav vertically */
+            justify-content: center; /* Center items vertically */
         }
 
-        .card:hover {
-            transform: translateY(-5px);
+        .logo {
+            max-width: 150px; /* Adjust logo size */
+            margin-bottom: 20px; /* Space between logo and nav */
         }
 
-        .card img {
-            width: 100%;
-            height: 180px; /* Fixed height for images */
-            object-fit: cover; /* Cover the image without distortion */
+        nav {
+            background-color: #00796b; /* Background color for navigation */
+            padding: 10px 0; /* Add some padding for aesthetics */
+            width: 100%; /* Make sure nav takes full width */
+            border-radius: 8px; /* Rounded corners */
         }
 
-        .card h3 {
-            margin: 15px 0;
-            color: #333;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px; /* Space between nav items */
+            justify-content: center; /* Center nav items */
         }
 
-        .card button {
-            background: #00796b;
-            color: white;
-            border: none;
-            padding: 12px 20px; /* Adjusted padding */
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-            margin-bottom: 15px;
-            font-size: 16px; /* Increased font size */
+        nav a {
+            text-decoration: none;
+            color: white; /* Change to white for better contrast */
+            font-weight: bold;
         }
 
-        .card button:hover {
-            background: #459ea0;
-            transform: scale(1.05); /* Slight scale on hover */
+        nav a:hover {
+            color: #004d40; /* Change to desired hover color */
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <img src="photos/log.jpg.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index1.html">REGION</a></li>
+                    <li><a href="index7.html">SERVICES</a></li>
+                    <li><a href="index3.html">ABOUT US</a></li>
+                    <li><a href="index2.html">CONTACT US</a></li>
+                    <li><a href="#support">SUPPORT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- Cards Section -->
-<h1>WORKER'S NATION</h1>
-<div class="card-container">
-    <div class="card">
-        <img src="photos/chef.jpg" alt="Chef">
-        <h3>CHEF</h3>
-        <a href="index4.html"><button>View Chef</button></a>
-    </div>
-    <div class="card">
-        <img src="photos/baby sitter.jpg" alt="Baby Sitters">
-        <h3>BABY SITTERS</h3>
-        <a href="index5.html"><button>View Sitters</button></a>
-    </div>
-    <div class="card">
-        <img src="photos/hk.png" alt="House Keeping">
-        <h3>HOUSE KEEPING</h3>
-        <a href="index1.html"><button>View Housekeeping</button></a>
-    </div>
-    <div class="card">
-        <img src="photos/driver.jpg" alt="Driver">
-        <h3>DRIVER</h3>
-        <a href="index1.html"><button>View Driver</button></a>
-    </div>
-</div>
+    <main>
+        <section class="hero">
+            <h1>Connecting You with Trusted Domestic Workers</h1>
+            <p>Find required service for your home.</p>
+            <input type="text" placeholder="Search for services...">
+            <a href="index4.html"><button>Search</button></a>
+        </section>
 
+        <section id="about" class="services">
+            <h2>ABOUT US</h2>
+            <p>We connect households with skilled and trustworthy domestic workers. Our mission is to provide peace of mind and quality service to families.</p>
+        </section>
+
+        <section id="services">
+            <h2>OUR SERVICES</h2>
+            <ul>
+                <li>Chef</li>
+                <li>Baby Sitter</li>
+                <li>Housekeeping</li>
+                <li>Driver</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>CONTACT US</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="apply">
+            <h2>APPLY NOW</h2>
+            <p>If you’re looking for work as a domestic worker, fill out our application form.</p>
+            <a href="alert.html" class="btn"><button>ABOUT</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Workers 4U. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script_hp.js"></script>
 </body>
 </html>
