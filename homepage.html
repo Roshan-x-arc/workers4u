@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Workers Connect</title>
+    <link rel="stylesheet" href="styles_hp.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f8f8; /* Optional: add a background color */
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Stack logo and nav vertically */
+            justify-content: center; /* Center items vertically */
+        }
+
+        .logo {
+            max-width: 150px; /* Adjust logo size */
+            margin-bottom: 20px; /* Space between logo and nav */
+        }
+
+        nav {
+            background-color: #00796b; /* Background color for navigation */
+            padding: 10px 0; /* Add some padding for aesthetics */
+            width: 100%; /* Make sure nav takes full width */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px; /* Space between nav items */
+            justify-content: center; /* Center nav items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; /* Change to white for better contrast */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #004d40; /* Change to desired hover color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="photos/log.jpg.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index1.html">REGION</a></li>
+                    <li><a href="index.html">SERVICES</a></li>
+                    <li><a href="index3.html">ABOUT US</a></li>
+                    <li><a href="index2.html">CONTACT US</a></li>
+                    <li><a href="#support">SUPPORT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Connecting You with Trusted Domestic Workers</h1>
+            <p>Find required service for your home.</p>
+            <input type="text" placeholder="Search for services...">
+            <a href="index4.html"><button>Search</button></a>
+        </section>
+
+        <section id="about" class="services">
+            <h2>ABOUT US</h2>
+            <p>We connect households with skilled and trustworthy domestic workers. Our mission is to provide peace of mind and quality service to families.</p>
+        </section>
+
+        <section id="services">
+            <h2>OUR SERVICES</h2>
+            <ul>
+                <li>Chef</li>
+                <li>Baby Sitter</li>
+                <li>Housekeeping</li>
+                <li>Driver</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>CONTACT US</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="apply">
+            <h2>APPLY NOW</h2>
+            <p>If you’re looking for work as a domestic worker, fill out our application form.</p>
+            <a href="alert.html" class="btn"><button>ABOUT</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Workers 4U. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script_hp.js"></script>
+</body>
+</html>

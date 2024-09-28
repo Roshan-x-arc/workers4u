@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Worker Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b2ebf2; /* Pale beige background */
+        }
+
+        /* Heading Styles */
+        h1 {
+            text-align: center;
+            margin-top: 100px; /* Increased space at the top */
+            color: #333;
+        }
+
+        /* Card Container Styles */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            gap: 20px;
+            padding: 20px;
+            margin: 40px auto; /* Added margin to lower elements */
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 280px; /* Card width */
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px; /* Fixed height for images */
+            object-fit: cover; /* Cover the image without distortion */
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .card button {
+            background: #00796b;
+            color: white;
+            border: none;
+            padding: 12px 20px; /* Adjusted padding */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            margin-bottom: 15px;
+            font-size: 16px; /* Increased font size */
+        }
+
+        .card button:hover {
+            background: #459ea0;
+            transform: scale(1.05); /* Slight scale on hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Cards Section -->
+<h1>WORKER'S NATION</h1>
+<div class="card-container">
+    <div class="card">
+        <img src="photos/chef.jpg" alt="Chef">
+        <h3>CHEF</h3>
+        <a href="index4.html"><button>View Chef</button></a>
+    </div>
+    <div class="card">
+        <img src="photos/baby sitter.jpg" alt="Baby Sitters">
+        <h3>BABY SITTERS</h3>
+        <a href="index5.html"><button>View Sitters</button></a>
+    </div>
+    <div class="card">
+        <img src="photos/hk.png" alt="House Keeping">
+        <h3>HOUSE KEEPING</h3>
+        <a href="index1.html"><button>View Housekeeping</button></a>
+    </div>
+    <div class="card">
+        <img src="photos/driver.jpg" alt="Driver">
+        <h3>DRIVER</h3>
+        <a href="index1.html"><button>View Driver</button></a>
+    </div>
+</div>
+
+</body>
+</html>

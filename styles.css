@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    color: #333;
+}
+
+.hero-content p {
+    color: #666;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    background: #f1f1f1;
+    padding: 20px 0;
+}
+
+.stat p {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+.stat span {
+    display: block;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
